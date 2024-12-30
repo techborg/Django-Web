@@ -20,5 +20,5 @@ from tecborg_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.print_hello),
+    path('home/', views.print_hello),
 ]
