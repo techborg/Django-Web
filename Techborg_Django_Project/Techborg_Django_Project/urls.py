@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from tecborg_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/', views.home,name='home'),
+    path('innovation/', views.innovation,name='innovation'),
+    path('conact/', views.conact,name='conact'),
+    path('about/', views.about,name='about'),
 ]
